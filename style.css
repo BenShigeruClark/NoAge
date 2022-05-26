@@ -1,0 +1,107 @@
+/*  FONTS 
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Work Sans', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    overflow-x: hidden;
+    position: relative;
+    /* height: 100%; */
+}
+
+#logo {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-header {
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Work Sans', sans-serif;
+    min-height: 10vh;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* color: rgb(107, 107, 107); */
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0rem;
+    z-index: 2;
+    position: relative;
+}
+
+.line1, 
+.line2,
+.line3,
+.line4 {
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: black;
+    pointer-events: none;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-basis: 25rem;
+    position: relative;
+    background: white;
+    position: relative;
+    /* width: 100%; */
+    height: 100vh;
+}
+
+.hero-text {
+    /* position: absolute; */
+    height: 100%;
+    background: white;
+    font-size: 20rem;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text h1 {
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-family: 'Work Sans', sans-serif; */
+    margin-top: -200px;
+    font-stretch: expanded;
+}
+
+/* Main text animations */
+.ml3 {
+    background: linear-gradient(to right, #075eff, #6666ff, #0099ff , #00ff00, #fae102, #f86e13, #ff3399,#f71313, #6666ff, #16ffe0, #04ffb4, #ff2cff, #ff0095, rgb(255, 166, 0), rgb(247, 247, 2), rgb(15, 255, 15), rgb(0, 204, 255), rgb(231, 0, 231), rgb(204, 0, 255), rgb(255, 154, 255), #0099ff , #00ff00, #fae102, #f86e13, #ff3399,#f71313, #075eff, #6666ff, #0099ff , #00ff00, #fae102, #f86e13, #ff3399,#f71313, #6666ff, #16ffe0, #04ffb4, #ff2cff, #ff0095, rgb(255, 166, 0), rgb(247, 247, 2), rgb(15, 255, 15), rgb(0, 204, 255), rgb(231, 0, 231), rgb(204, 0, 255), rgb(255, 154, 255), #0099ff , #00ff00, #fae102, #f86e13, #ff3399,#f71313);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 100s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+  
+    50% {
+        background-position: 100% 0;
+    }
+  }
