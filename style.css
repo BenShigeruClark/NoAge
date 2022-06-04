@@ -84,6 +84,7 @@ body {
     /* font-family: 'Work Sans', sans-serif; */
     margin-top: -200px;
     font-stretch: expanded;
+    filter: drop-shadow(20px 10px 4px #959598)
 }
 
 /* Main text animations */
