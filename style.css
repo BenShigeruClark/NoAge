@@ -130,3 +130,7 @@ body {
       transform: scale(3);
       opacity: 50%;
   }
+
+  body.hide {
+      overflow: hidden;
+  }
