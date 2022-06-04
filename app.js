@@ -8,5 +8,16 @@ function cursor(e) {
     mouse.style.left = e.pageX + "px";
 }
 
+function activeCursor(e) {
+    const item = e.target;
+    // console.log(item);
+    if(item.id === "logo" || item.classList.contains("burger")) {
+        mouse.classList.add("nav-active");
+    } else {
+        mouse.classList.remove("nav-active");
+    }
+}
+
 window.addEventListener("mousemove", cursor);
+window.addEventListener("mouseover", activeCursor);
 

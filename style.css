@@ -124,3 +124,9 @@ body {
     transition-property: background, transform;
     transform-origin: 75% 75%;
   } 
+
+  .cursor.nav-active {
+      background: #0af802;
+      transform: scale(3);
+      opacity: 50%;
+  }
