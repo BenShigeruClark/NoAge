@@ -19,8 +19,15 @@ body {
 }
 
 #logo {
-    color: black;
+    /* color: black; */
     text-decoration: none;
+    background: linear-gradient(to right, #075eff, #6666ff, #0099ff , #00ff00, #fae102, #f86e13, #ff3399,#f71313, #6666ff, #16ffe0, #04ffb4, #ff2cff, #ff0095, rgb(255, 166, 0), rgb(247, 247, 2), rgb(15, 255, 15), rgb(0, 204, 255), rgb(231, 0, 231), rgb(204, 0, 255), rgb(255, 154, 255), #0099ff , #00ff00, #fae102, #f86e13, #ff3399,#f71313, #075eff, #6666ff, #0099ff , #00ff00, #fae102, #f86e13, #ff3399,#f71313, #6666ff, #16ffe0, #04ffb4, #ff2cff, #ff0095, rgb(255, 166, 0), rgb(247, 247, 2), rgb(15, 255, 15), rgb(0, 204, 255), rgb(231, 0, 231), rgb(204, 0, 255), rgb(255, 154, 255), #0099ff , #00ff00, #fae102, #f86e13, #ff3399,#f71313);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 100s ease-in-out infinite;
+    background-size: 400% 100%;
+    filter: drop-shadow(2px 2px 1px #959598)
 }
 
 .nav-header {
@@ -141,7 +148,7 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      background: white;
+      background: rgb(54, 65, 56);
       display: flex;
       justify-content: space-around;
       align-items: center;
