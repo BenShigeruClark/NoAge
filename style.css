@@ -13,7 +13,8 @@ font-family: 'Work Sans', sans-serif;
 
 body {
     background: white;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    overflow: hidden;
     position: relative;
     /* height: 100%; */
 }

@@ -34,6 +34,7 @@ function navToggle(e) {
         gsap.to(".line4", 0.4, { rotate: "180", y: -24, background: "white"});
         gsap.to("#logo", 1, { color: "white", filter: "drop-shadow(0px 0px 0px white)" });
         gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
+        document.body.classList.add("hide");
     } else {
         e.target.classList.remove("active");
         gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "black" });
