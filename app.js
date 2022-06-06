@@ -26,11 +26,24 @@ function activeCursor(e) {
 }
 
 function navToggle(e) {
-    gsap.to(".line1", 0.5, { rotate: "45", y: 5, background: "white" });
-    gsap.to(".line2", 0.5, { rotate: "-45", y: -5, background: "white" });
-    gsap.to(".line3", 0.5, { rotate: "90", y: -15, background: "white" });
-    gsap.to(".line4", 0.4, { rotate: "180", y: -24, background: "white"});
-    gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
+    if(!e.target.classList.contains("active")) {
+        e.target.classList.add("active");
+        gsap.to(".line1", 0.5, { rotate: "45", y: 5, background: "white" });
+        gsap.to(".line2", 0.5, { rotate: "-45", y: -5, background: "white" });
+        gsap.to(".line3", 0.5, { rotate: "90", y: -15, background: "white" });
+        gsap.to(".line4", 0.4, { rotate: "180", y: -24, background: "white"});
+        gsap.to("#logo", 1, { color: "white", filter: "drop-shadow(0px 0px 0px white)" });
+        gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
+    } else {
+        e.target.classList.remove("active");
+        gsap.to(".line1", 0.5, { rotate: "0", y: 0, background: "black" });
+        gsap.to(".line2", 0.5, { rotate: "0", y: 0, background: "black" });
+        gsap.to(".line3", 0.5, { rotate: "0", y: 0, background: "black" });
+        gsap.to(".line4", 0.4, { rotate: "0", y: 0, background: "black"});
+        gsap.to("#logo", 1, { color: "transparent", filter: "drop-shadow(2px 2px 1px #959598)" });
+        gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
+        document.body.classList.remove("hide");
+    }
 }
 
 // function navToggle(e) {

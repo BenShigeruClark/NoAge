@@ -157,3 +157,24 @@ body {
       clip-path: circle(50px at 100% -10%);
       -webkit-clip-path: circle(50px at 100% -10%);
   }
+
+  .nav-links {
+      font-size: 3rem;
+      flex-basis: 30rem;
+  }
+
+  .nav-links h3 {
+      padding: 2rem 0rem;
+      /* text-decoration: none; */
+  }
+
+  .nav-links a {
+      text-decoration: none;
+      color: white;
+      /* text-align: center;
+      justify-content: center; */
+      /* font-family: 'IBM Plex Sans', sans-serif; */
+      font-family: 'Oswald', sans-serif;
+      /* font-family: 'Roboto Mono', monospace; */
+      /* font-family: 'Work Sans', sans-serif; */
+  }
