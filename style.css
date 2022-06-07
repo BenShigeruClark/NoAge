@@ -184,16 +184,25 @@ body {
     .hero-text {
         font-size: 15rem;
     }
+    .nav-links h3 {
+        font-size: 2.75rem;
+    }
   }
 
   @media screen and (max-width: 1027px) {
     .hero-text {
         font-size: 10rem;
     }
+    .nav-links h3 {
+        font-size: 2.5rem;
+    }
   }
 
   @media screen and (max-width: 689px) {
     .hero-text {
         font-size: 5rem;
+    }
+    .nav-links h3 {
+        font-size: 2.25rem;
     }
   }
