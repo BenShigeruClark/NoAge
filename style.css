@@ -179,3 +179,21 @@ body {
       /* font-family: 'Roboto Mono', monospace; */
       /* font-family: 'Work Sans', sans-serif; */
   }
+
+  @media screen and (max-width: 1375px) {
+    .hero-text {
+        font-size: 15rem;
+    }
+  }
+
+  @media screen and (max-width: 1027px) {
+    .hero-text {
+        font-size: 10rem;
+    }
+  }
+
+  @media screen and (max-width: 689px) {
+    .hero-text {
+        font-size: 5rem;
+    }
+  }
